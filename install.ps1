@@ -1,4 +1,4 @@
-$module        	= 'Dramatic.TEMPLATE2'
+$module        	= 'Dramatic.TEMPLATE'
 $gitrepository	= 'https://github.com/DramaticDevelopment/Dramatic.TEMPLATE'
 
 # Make sure the module is not loaded
