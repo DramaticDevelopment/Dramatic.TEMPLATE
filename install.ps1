@@ -1,28 +1,28 @@
-$module  = 'Dramatic.TEMPLATE2'
-$gitname = 'Dramatic.TEMPLATE'
+$module        	= 'Dramatic.TEMPLATE2'
+$gitrepository	= 'https://github.com/DramaticDevelopment/Dramatic.TEMPLATE'
 
 # Make sure the module is not loaded
 Remove-Module $module -ErrorAction SilentlyContinue
 
 # Download latest version
-$webclient = New-Object System.Net.WebClient
-$url = "https://github.com/victorvogelpoel/$gitname/archive/master.zip"
+$webclient		= New-Object System.Net.WebClient
+$url 			= "$gitrepository/archive/master.zip"
 
 Write-Host "Downloading latest version of $module from $url" -ForegroundColor Cyan
-$file = "$($env:TEMP)\$module.zip"
+$file 			= "$($env:TEMP)\$module.zip"
 $webclient.DownloadFile($url,$file)
 Write-Host "File saved to $file" -ForegroundColor Green
 
 # Unblock and Decompress
 Unblock-File -Path $file
 
-$targetondisk = "$($env:USERPROFILE)\Documents\WindowsPowerShell\Modules"
+$targetondisk 	= "$($env:USERPROFILE)\Documents\WindowsPowerShell\Modules"
 New-Item -ItemType Directory -Force -Path $targetondisk | out-null
 
-$shell_app=new-object -com shell.application
-$zip_file = $shell_app.namespace($file)
+$shell_app		= new-object -com shell.application
+$zip_file 		= $shell_app.namespace($file)
 Write-Host "Uncompressing the Zip file to $($targetondisk)" -ForegroundColor Cyan
-$destination = $shell_app.namespace($targetondisk)
+$destination	= $shell_app.namespace($targetondisk)
 $destination.Copyhere($zip_file.items(), 0x10)
 
 # Rename and import
