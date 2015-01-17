@@ -36,9 +36,9 @@ It's short for *Dramatic Development*, my coding brand.
 
 
 ## Installation ##
-Open a PowerShell command box and run the following command to install this module straight from the GitHub repository to the Windo:
-iex (New-Object Net.WebClient).DownloadString("https://github.com/victorvogelpoel/Dramatic.TEMPLATE/install.ps1")
+Open a PowerShell command box and run the following command to install this module straight from the GitHub repository to the Window:
 
+    iex (New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/DramaticDevelopment/Dramatic.TEMPLATE/master/install.ps1')
 
 ## Features ##
 - Support for smooth installing from GitHub repository
