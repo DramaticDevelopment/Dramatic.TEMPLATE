@@ -1,6 +1,6 @@
 ## PowerShell module TEMPLATE ##
 
-Dramatic.TEMPLATE is Victor's boilerplate for a PowerShell module.
+PSModuleTEMPLATE is Victor's boilerplate for a PowerShell module.
 
 Copyright (C) 2015 Victor Vogelpoel - Dramatic Development
 
@@ -19,10 +19,10 @@ You should have received a copy of the GNU General Public License along with thi
 
 
 
-### Why Module "Dramatic.TEMPLATE"? ###
+### Why Module "PSModuleTEMPLATE"? ###
 I build a lot of PowerShell modules for various reasons and products. This module is my boilerplate for starting a new module.
 
-A module is an easly encapsulation for all CmdLets, variables, types and formatters. 
+A module is an easy encapsulation for all CmdLets, variables, types and formatters. 
 
 All my modules have a manifest .PSD1 file, a .PSM1 file and one or more .PS1 files in the same directory: 
 
@@ -31,14 +31,10 @@ All my modules have a manifest .PSD1 file, a .PSM1 file and one or more .PS1 fil
 - The PSM1 file contains some scoped variables and some code to detect and dotsource any or specific .PS1 files that exist in the same directory. While loading the module, the PSM1 code imports the .PS1 files into memory. 
 
 
-### "Dramatic"? ###
-It's short for *Dramatic Development*, my coding brand.
-
-
 ## Installation ##
 Open a PowerShell command box and run the following command to install this module straight from the GitHub repository to the WindowsPowerShell\Modules folder in the MyDocuments of your Windows user profile:
 
-    iex (New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/DramaticDevelopment/Dramatic.TEMPLATE/master/install.ps1')
+    iex (New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/DramaticDevelopment/PSModuleTEMPLATE/master/install.ps1')
 
 ## Features ##
 - Support for smooth installing from GitHub repository
@@ -46,13 +42,13 @@ Open a PowerShell command box and run the following command to install this modu
 
 ## Usage ##
     
-    Import-Module Dramatic.TEMPLATE
+    Import-Module PSModuleTEMPLATE
 
 	# Now use the module's cmdlets
 	Invoke-HelloUniverse
 	
 	Get-Help Invoke-HelloUniverse
-	Get-Help about_DramaticTEMPLATEModule
+	Get-Help about_PSModuleTEMPLATEModule
 
 
 ## Resources ##

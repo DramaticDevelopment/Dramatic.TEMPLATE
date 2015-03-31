@@ -1,0 +1,33 @@
+TOPIC 
+	about_PSModuleTEMPLATEModule
+	 
+SHORT DESCRIPTION
+	A boilerplate for Victor's PowerShell Modules.
+	
+LONG DESCRIPTION
+	I build a lot of PowerShell modules for various reasons and products. This
+	module is my boilerplate for starting a new module.
+	
+	A module is an easly encapsulation for all CmdLets, variables, types and formatters. 
+
+	All my modules have a manifest .PSD1 file, a .PSM1 file and one or more .PS1 files
+	in the same directory: 
+
+	- Each of these .PS1 usually contain only one advanced CmdLet function. In my
+	  experience, working in a team on the module functions is easier when each 
+	  function has its own .PS1 file. 
+	- The PSD1 file (which is actually an hashtable) describes the module and
+	  its properties.
+	- The PSM1 file contains some scoped variables and some code to detect and
+	  dotsource any or specific .PS1 files that exist in the same directory. 
+	  While loading the module, the PSM1 code imports the .PS1 files into memory. 
+
+
+AUTHOR
+	Author: Victor Vogelpoel (victor@victorvogelpoel.nl)
+	Web: http://victorvogelpoel.nl
+	
+SEE ALSO
+	
+
+	
