@@ -34,7 +34,7 @@ All my modules have a manifest .PSD1 file, a .PSM1 file and one or more .PS1 fil
 ## Installation ##
 Open a PowerShell command box and run the following command to install this module straight from the GitHub repository to the WindowsPowerShell\Modules folder in the MyDocuments of your Windows user profile:
 
-    iex (New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/DramaticDevelopment/PSModuleTEMPLATE/master/install.ps1')
+    iex (New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/DramaticDevelopment/PSModuleTEMPLATE/master/install/install.ps1')
 
 ## Features ##
 - Support for smooth installing from GitHub repository
@@ -52,5 +52,6 @@ Open a PowerShell command box and run the following command to install this modu
 
 
 ## Resources ##
-- Victor's vCard site [http://victorvogelpoel.nl](http://victorvogelpoel.nl)
+- Victor's site [http://victorvogelpoel.nl](http://victorvogelpoel.nl)
+- Victor's blog [http://blog.victorvogelpoel.nl](http://blog.victorvogelpoel.nl)
 - [Victor's GitHub](https://github.com/victorvogelpoel) 
