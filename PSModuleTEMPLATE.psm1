@@ -29,7 +29,7 @@ $ignoreCommandsForDotSourcing = @(
 
 Get-ChildItem $script:thisModuleDirectory\*.ps1 | foreach { 
 
-	if ($ignoreCommandsForDotSourcing -notcontains $_.Name)
+	if ($ignoreCommandsForDotSourcing -notcontains $_.Name -and $_.Name -notlike '*.Tests.ps1')
 	{
 		Write-Verbose "Importing functions from file '$($_.Name)' by dotsourcing `"$($_.Fullname)`""
 		. $_.Fullname
