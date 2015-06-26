@@ -1,4 +1,4 @@
-$module        	= 'PSModuletemplate'
+$module        	= 'PSModuleTEMPLATE'
 $gitrepository	= 'https://github.com/DramaticDevelopment/PSModuleTEMPLATE'
 
 # Make sure the module is not loaded
