@@ -1,5 +1,5 @@
-$module        	= 'Dramatic.TEMPLATE'
-$gitrepository	= 'https://github.com/DramaticDevelopment/Dramatic.TEMPLATE'
+$module        	= 'PSModuletemplate'
+$gitrepository	= 'https://github.com/DramaticDevelopment/PSModuleTEMPLATE'
 
 # Make sure the module is not loaded
 Remove-Module $module -ErrorAction SilentlyContinue
